@@ -1,0 +1,30 @@
+<app-menu></app-menu>
+<ion-router-outlet id="main"></ion-router-outlet>
+<ion-header mode="ios">
+  <ion-toolbar color="tertiary">
+    <ion-title>Principal</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-item><ion-button (click)="saludar()">Saludar </ion-button></ion-item>
+  <ion-item><ion-button routerLink="/botones">Botones </ion-button></ion-item>
+  <ion-item><ion-button routerLink="/card">Card </ion-button></ion-item>
+  <ion-item><ion-button routerLink="/slide">Slide </ion-button></ion-item>
+  <ion-item><ion-button routerLink="/fab">Ionic-Fab</ion-button></ion-item>
+  <ion-item><ion-button routerLink="/datetime">Datetime</ion-button></ion-item>
+  <ion-item><ion-button routerLink="/listas">Listas</ion-button></ion-item>
+  <ion-item><ion-button routerLink="/listas-personas">Listas-Personas</ion-button></ion-item>
+  <ion-item><ion-button routerLink="/personas">Personas</ion-button></ion-item>
+  <ion-item><ion-button routerLink="/tabs">Tabs</ion-button></ion-item>
+  <ion-item><ion-button routerLink="/card-users">Card-Users</ion-button></ion-item>
+</ion-content>
+
+<ion-footer mode="ios">
+  <ion-toolbar color="tertiary">
+    <ion-title>UPSE 2021-2</ion-title>
+  </ion-toolbar>
+</ion-footer>

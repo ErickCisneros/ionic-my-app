@@ -1,0 +1,41 @@
+<app-header color="danger" title="Personas y mascotas"></app-header>
+
+<ion-content>
+  <ion-title>Personas</ion-title>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Cedula</ion-label>
+      <ion-label>Nombre</ion-label>
+      <ion-label>Apellido</ion-label>
+      <ion-label>Telefono</ion-label>
+      <ion-label>Edad</ion-label>
+      <ion-label>Mascotas</ion-label>
+    </ion-list-header>
+    <ion-item-sliding *ngFor="let persona of personas">
+      <ion-item>
+        <ion-label>{{ persona.cedula }}</ion-label>
+        <ion-label>{{ persona.nombre }}</ion-label>
+        <ion-label>{{ persona.apellido }}</ion-label>
+        <ion-label>{{ persona.telefono }}</ion-label>
+        <ion-label>{{ persona.edad }}</ion-label>
+        <ion-button (click)="cambiarPersona(persona.cedula)">Mostrar</ion-button>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+
+  <ion-title *ngIf="personaActual">Mascotas de {{ personaActual.nombre }}</ion-title>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Nombre</ion-label>
+      <ion-label>Especie</ion-label>
+      <ion-label>Edad</ion-label>
+    </ion-list-header>
+    <ion-item-sliding *ngFor="let mascota of mascotas">
+      <ion-item>
+        <ion-label>{{ mascota.nombre }}</ion-label>
+        <ion-label>{{ mascota.especie }}</ion-label>
+        <ion-label>{{ mascota.edad }}</ion-label>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

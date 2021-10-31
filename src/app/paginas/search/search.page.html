@@ -1,0 +1,34 @@
+<app-header color="primary" title="Search"></app-header>
+
+<ion-content>
+
+  <ion-searchbar (ionChange)="buscar($event)" placeholder="Filter Persons"></ion-searchbar>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>CEDULA</ion-label>
+      <ion-label>NOMBRES</ion-label>
+      <ion-label>APELLIDOS</ion-label>
+      <ion-label>TELEFONO</ion-label>
+      <ion-label>EDAD</ion-label>
+    </ion-list-header>
+
+    <ion-item-sliding *ngFor="let cliente of clientes | async | filtro:textoBuscar:'nombre'" #ionItemSliding>
+      <ion-item>
+        <ion-label>{{cliente.cedula}}</ion-label>
+        <ion-label>{{cliente.nombre}}</ion-label>
+        <ion-label>{{cliente.apellido}}</ion-label>
+        <ion-label>{{cliente.telefono}}</ion-label>
+        <ion-label>{{cliente.edad}}</ion-label>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="light" (click)="editarCliente(cliente,ionItemSliding)">
+          <ion-icon color="secondary" name="cog"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="light" (click)="eliminarCliente(cliente.cedula,ionItemSliding)">
+          <ion-icon color="danger" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listas</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="principal"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Cedula</ion-label>
+      <ion-label>Nombre</ion-label>
+      <ion-label>Apellido</ion-label>
+      <ion-label>Telefono</ion-label>
+      <ion-label>Edad</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let cliente of (clientes | async)">
+      <ion-label>{{ cliente.cedula }}</ion-label>
+      <ion-label>{{ cliente.nombre }}</ion-label>
+      <ion-label>{{ cliente.apellido }}</ion-label>
+      <ion-label>{{ cliente.telefono }}</ion-label>
+      <ion-label>{{ cliente.edad }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

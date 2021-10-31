@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>fab</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="principal"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="baseball"></ion-icon>
+    </ion-fab-button>
+    <!-- Añadir una lista de botones -->
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="saludar()">
+        <ion-icon color="primary" name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon color="secondary" name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon color="youtube" name="logo-youtube"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button>
+        <ion-icon color="tertiary" name="mail-open"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon color="warning" name="logo-snapchat"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon color="success" name="logo-youtube"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+

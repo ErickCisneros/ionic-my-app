@@ -1,0 +1,27 @@
+[
+    {
+        "icon": "copy-outline",
+        "description": "Botones",
+        "url": "/botones"
+    }, {
+        "icon": "card-outline",
+        "description": "Card",
+        "url": "/card"
+    }, {
+        "icon": "albums-outline",
+        "description": "Slide",
+        "url": "/slide"
+    }, {
+        "icon": "wifi",
+        "description": "Search",
+        "url": "/search"
+    }, {
+        "icon": "logo-buffer",
+        "description": "Array",
+        "url": "/array"
+    }, {
+        "icon": "logo-facebook",
+        "description": "Facebook",
+        "url": "/facebook"
+    }
+]

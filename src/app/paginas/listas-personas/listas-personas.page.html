@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listas-personas</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="principal"></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-label>nuevo</ion-label>
+      <ion-icon color="danger" name="person-add"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar placeholder="Filter Schedules"></ion-searchbar>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>CEDULA</ion-label>
+      <ion-label>NOMBRES</ion-label>
+      <ion-label>APELLIDOS</ion-label>
+      <ion-label>TELEFONO</ion-label>
+      <ion-label>EDAD</ion-label>
+    </ion-list-header>
+  
+    <ion-item-sliding *ngFor="let cliente of clientes" #ionItemSliding>
+      <ion-item>
+        <ion-label>{{cliente.cedula}}</ion-label>
+        <ion-label>{{cliente.nombre}}</ion-label>
+        <ion-label>{{cliente.apellido}}</ion-label>
+        <ion-label>{{cliente.telefono}}</ion-label>
+        <ion-label>{{cliente.edad}}</ion-label>
+      </ion-item>
+  
+      <ion-item-options side="end">
+        <ion-item-option color="light" (click)="Editar(cliente,ionItemSliding)">
+          <ion-icon color="secondary" name="cog"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="light" (click)="Eliminar(cliente.cedula,ionItemSliding)">
+          <ion-icon color="danger" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  
+  <!-- <ion-list>
+      <ion-list-header>
+        <ion-label>IMAGEN</ion-label>
+        <ion-label>ID</ion-label>
+        <ion-label>TITULO</ion-label>
+      </ion-list-header>
+  
+      <ion-item *ngFor="let obj of datosWeb">
+        <ion-avatar>
+          <img src="{{obj.thumbnailUrl}}">
+        </ion-avatar>
+        <ion-label>{{obj.id}}</ion-label>
+        <ion-label>{{obj.title}}</ion-label>
+      </ion-item>
+    </ion-list> -->
+</ion-content>

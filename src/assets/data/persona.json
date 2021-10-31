@@ -1,0 +1,64 @@
+[
+    {
+        "cedula": "12345",
+        "nombre": "Orly",
+        "apellido": "Matias",
+        "telefono": "1234567890",
+        "edad": 25,
+        "mascotas" : [
+            {
+                "nombre": "Max",
+                "especie": "Perro",
+                "edad": 7
+            },
+            {
+                "nombre": "Blacky",
+                "especie": "Perro",
+                "edad": 5
+            }
+        ]
+    },
+    {
+        "cedula": "54312",
+        "nombre": "Steven",
+        "apellido": "Borbor",
+        "telefono": "1234567890",
+        "edad": 24,
+        "mascotas" : [
+            {
+                "nombre": "Zeus",
+                "especie": "Perro",
+                "edad": 2
+            },
+            {
+                "nombre": "Morita",
+                "especie": "Perro",
+                "edad": 1
+            },
+            {
+                "nombre": "Luna",
+                "especie": "Gato",
+                "edad": 3
+            }
+        ]
+    },
+    {
+        "cedula": "15324",
+        "nombre": "Allan",
+        "apellido": "Matias",
+        "telefono": "1234567890",
+        "edad": 22,
+        "mascotas" : [
+            {
+                "nombre": "Layla",
+                "especie": "Perro",
+                "edad": 7
+            },
+            {
+                "nombre": "Tom",
+                "especie": "Gato",
+                "edad": 5
+            }
+        ]
+    }
+]

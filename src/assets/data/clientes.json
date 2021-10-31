@@ -1,0 +1,23 @@
+[
+    {
+        "cedula": "12345",
+        "nombre": "Orly",
+        "apellido": "Matias",
+        "telefono": "1234567890",
+        "edad": 25
+    },
+    {
+        "cedula": "54312",
+        "nombre": "Steven",
+        "apellido": "Borbor",
+        "telefono": "1234567890",
+        "edad": 24
+    },
+    {
+        "cedula": "15324",
+        "nombre": "Allan",
+        "apellido": "Matias",
+        "telefono": "1234567890",
+        "edad": 22
+    }
+]

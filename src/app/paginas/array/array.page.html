@@ -1,0 +1,26 @@
+<app-header color="primary" title="Array"></app-header>
+
+<ion-content>
+  <ion-item>
+    <ion-button (click)="agregarNuevo()">Add new</ion-button>
+  </ion-item>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>CEDULA</ion-label>
+      <ion-label>NOMBRES</ion-label>
+      <ion-label>APELLIDOS</ion-label>
+      <ion-label>TELEFONO</ion-label>
+      <ion-label>EDAD</ion-label>
+    </ion-list-header>
+
+    <ion-item-sliding *ngFor="let cliente of clientes | async" #ionItemSliding>
+      <ion-item>
+        <ion-label>{{cliente.cedula}}</ion-label>
+        <ion-label>{{cliente.nombre}}</ion-label>
+        <ion-label>{{cliente.apellido}}</ion-label>
+        <ion-label>{{cliente.telefono}}</ion-label>
+        <ion-label>{{cliente.edad}}</ion-label>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
