@@ -1,0 +1,146 @@
+[
+    {
+        "nombre": "Short mujer denim americanino ",
+        "modelo": "359c000",
+        "fotos": [
+            {
+                "id": 1,
+                "imagen": "assets/img/ropa/SHORT-MUJER-DENIM-CHEVIGNON-451C001-AZUL-1.jpg"
+            },
+            {
+                "id": 2,
+                "imagen": "assets/img/ropa/SHORT-MUJER-DENIM-CHEVIGNON-451C001-AZUL-2.jpg"
+            },
+            {
+                "id": 3,
+                "imagen": "assets/img/ropa/SHORT-MUJER-DENIM-CHEVIGNON-451C001-AZUL-3.jpg"
+            },
+            {
+                "id": 4,
+                "imagen": "assets/img/ropa/SHORT-MUJER-DENIM-CHEVIGNON-451C001-AZUL-4.jpg"
+            }
+        ],
+        "colores": [
+            {
+                "color": "primary",
+                "nombre": "Azul"
+            },
+            {
+                "color": "dark",
+                "nombre": "Negro"
+            },
+            {
+                "color": "warning",
+                "nombre": "Naranja"
+            }
+        ],
+        "precio": 50,
+        "tallas": [
+            {
+                "talla": "S"
+            },
+            {
+                "talla": "M"
+            },
+            {
+                "talla": "XL"
+            }
+        ]
+    },
+    {
+        "nombre": "JEAN-HOMBRE-RIDER-CHEVIGNONL",
+        "modelo": "331C016",
+        "fotos": [
+            {
+                "id": 4,
+                "imagen": "assets/img/ropa/JEAN-HOMBRE-RIDER-CHEVIGNON-331C016-AZUL-1.jpg"
+            },
+            {
+                "id": 5,
+                "imagen": "assets/img/ropa/JEAN-HOMBRE-RIDER-CHEVIGNON-331C016-AZUL-2.jpg"
+            },
+            {
+                "id": 6,
+                "imagen": "assets/img/ropa/JEAN-HOMBRE-RIDER-CHEVIGNON-331C016-AZUL-3.jpg"
+            },
+            {
+                "id": 7,
+                "imagen": "assets/img/ropa/JEAN-HOMBRE-RIDER-CHEVIGNON-331C016-AZUL-4.jpg"
+            }
+        ],
+        "colores": [
+            {
+                "color": "primary",
+                "nombre": "Azul"
+            },
+            {
+                "color": "dark",
+                "nombre": "Negro"
+            },
+            {
+                "color": "success",
+                "nombre": "Verde"
+            }
+        ],
+        "precio": 60,
+        "tallas": [
+            {
+                "talla": "S"
+            },
+            {
+                "talla": "M"
+            }
+        ]
+    },
+    {
+        "nombre": "JEAN-HOMBRE-RIDER-CHEVIGNON",
+        "modelo": "331C129",
+        "fotos": [
+            {
+                "id": 8,
+                "imagen": "assets/img/ropa/JEAN-HOMBRE-RIDER-CHEVIGNON-331C129-AZUL-1.jpg"
+            },
+            {
+                "id": 9,
+                "imagen": "assets/img/ropa/JEAN-HOMBRE-RIDER-CHEVIGNON-331C129-AZUL-2.jpg"
+            },
+            {
+                "id": 10,
+                "imagen": "assets/img/ropa/JEAN-HOMBRE-RIDER-CHEVIGNON-331C129-AZUL-3.jpg"
+            },
+            {
+                "id": 11,
+                "imagen": "assets/img/ropa/JEAN-HOMBRE-RIDER-CHEVIGNON-331C129-AZUL-4.jpg"
+            }
+        ],
+        "colores": [
+            {
+                "color": "medium",
+                "nombre": "Plomo"
+            },
+            {
+                "color": "dark",
+                "nombre": "Negro"
+            },
+            {
+                "color": "warning",
+                "nombre": "Naranja"
+            }
+        ],
+        "precio": 70,
+        "tallas": [
+            {
+                "talla": "S"
+            },
+            {
+                "talla": "M"
+            },
+            {
+                "talla": "XL"
+            },
+            {
+                "talla": "XXL"
+            }
+        ]
+    }
+]

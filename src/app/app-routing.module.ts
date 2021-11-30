@@ -71,6 +71,10 @@ const routes: Routes = [
     path: 'facebook',
     loadChildren: () => import('./paginas/facebook/facebook.module').then( m => m.FacebookPageModule)
   },
+  {
+    path: 'catalogo',
+    loadChildren: () => import('./paginas/catalogo/catalogo.module').then( m => m.CatalogoPageModule)
+  },
  
 ];
 

@@ -1,0 +1,39 @@
+<app-header color="primary" title="Catálogo"></app-header>
+
+<ion-content>
+    <ion-card *ngFor="let ropa of ropas | async">
+        <ion-card-header>
+            <ion-card-title>{{ ropa.nombre }}</ion-card-title>
+            <ion-card-subtitle>{{ ropa.modelo }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-slides pager="true" [options]="slideConfig">
+            <ion-slide *ngFor="let foto of ropa.fotos">
+                <img [src]="foto.imagen"/>
+            </ion-slide>
+        </ion-slides>
+        <ion-card-content>
+            <ion-item>
+                <ion-label>Colores</ion-label>
+                <ion-list>
+                    <ion-item *ngFor="let color of ropa.colores">
+                        <ion-label>{{ color.nombre }}</ion-label>
+                        <ion-button class="ion-button-color" [color]="color.color" shape="round"></ion-button>
+                    </ion-item>
+                </ion-list>
+            </ion-item>
+            <ion-item>
+                <ion-label>Tallas</ion-label>
+                <ion-list>
+                    <ion-item *ngFor="let talla of ropa.tallas">
+                        <ion-label>{{ talla.talla }}</ion-label>
+                    </ion-item>
+                </ion-list>
+            </ion-item>
+            <ion-item>
+                <ion-label>Precio</ion-label>
+                <ion-label>{{ ropa.precio }}</ion-label>
+            </ion-item>
+            <ion-button expand="block">Añadir a carrito</ion-button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

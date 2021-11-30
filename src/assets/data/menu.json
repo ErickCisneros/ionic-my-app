@@ -23,5 +23,9 @@
         "icon": "logo-facebook",
         "description": "Facebook",
         "url": "/facebook"
+    }, {
+        "icon": "list-outline",
+        "description": "Catálogo",
+        "url": "/catalogo"
     }
 ]
